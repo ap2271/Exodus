@@ -1,0 +1,47 @@
+# Changelog
+
+V0.0    -   Implemented initial codebase to retrieve data from FTP server.
+V0.1    -   Enhanced functionality by integrating a Fanuc-specific directory and retrieval method.
+V0.2    -   Introduced user-friendly option to select backup directories, enhancing customization.
+V0.3    -   Developed a sleek and intuitive GUI for seamless user interaction.
+
+V1.0    -   Added options for manual input of backup directory and IP address, elevating user experience.
+V1.1    -   Optimized performance and efficiency with a robust multi-threaded backup method.
+V1.2    -   Expanded functionality by incorporating systems as text files, broadening compatibility.
+V1.3    -   Streamlined multi-thread operations and user interface, integrating logic to exclusively
+                support Massiv systems.
+V1.4    -   Improved organization by dynamically naming backup directories after respective system names.
+                Added system name inclusion in text file input.
+
+V2.0    -   Enhanced user experience with a refined GUI, extensive code cleanup, and integration of a visually
+                appealing splash screen and application icon.
+V2.1    -   Augmented user support with backup completion signals.
+V2.2    -   Fine-tuned GUI aesthetics for enhanced user engagement.
+                Optimized resource allocation by reducing simultaneous backup counts to 5.
+                Implemented pre-scheduling checks to verify system availability before initiating backup.
+                Facilitated post-backup navigation with automatic folder opening and an intuitive
+                "Open Backup" button for user convenience.
+V2.3    -   Added logic to generate a crash log for debugging using F9 during launch,
+                which will create a crash_log.txt file.
+V2.4    -   Added selection to choose maximum simultaneous backups.
+V2.5    -   Changed text file format to include the folder path for the project.
+                Backup folders are now created there, and existing backups are archived with rev1, rev2, etc.
+
+V3.0    -   Introduced file system to save all info as a project that can be opened and edited anytime.
+                All projects are saved in the Document folder.
+                Added Main and Status tabs. Main tab handles selecting systems, file extensions, pinging systems,
+                simultaneous backups, and initiating the method.
+V3.1    -   Fixed the freezing UI issue during project load and status check.
+                Addressed issues regarding failed backups due to connection interruptions and timeouts
+                by removing unfinished jobs.
+                Implemented minor cosmetic changes.
+                Added a new method in the project configurator to import data from Excel.
+V3.2    -   Modified the feature to import DCDL files, allowing import of all systems or selecting single ones.
+V3.3    -   Now Robot backup app support import of network Excel file and option to choose by vlan.
+                Added progress bar for the backup downloads.
+V3.4    -   Added Manual Option In help Menu. Logging users. Added Magna Logo
+V3.5    -   Added tool tip for all the elements, Display error type on failed backups. File Type selection is
+                refined.
+V3.6    -   Change in some wordings about the type of the Backup.
+V3.7    -   Added more patterns for robot names for Cosma Enet matrix, added condition to avoid single vlan
+                with multiple IP. Small change in pinging operation extended timeout and return counts.
